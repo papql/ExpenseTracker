@@ -1,0 +1,202 @@
+/* Expense Tracker — photo-matched layout */
+QWidget#ExpenseApp {
+    background-color: #EFF6F9;
+    color: #24424A;
+    font-family: "Avenir Next", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+}
+QWidget#ExpenseApp QLabel { background: transparent; }
+
+QFrame#headerCard {
+    background-color: #2E6C76;
+    border: none;
+    border-radius: 14px;
+    min-height: 84px;
+    max-height: 84px;
+}
+QLabel#mainTitle {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+QLabel#mainSubtitle {
+    color: #E4F0F2;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+QFrame#controlsCard, QFrame#tableCard, QFrame#summaryCard {
+    background-color: #FFFFFF;
+    border: 1px solid #D7E5E8;
+    border-radius: 15px;
+}
+QFrame#categoryControlPanel {
+    background: transparent;
+    border: none;
+}
+QLabel#fieldLabel, QLabel#summaryMetaLabel {
+    color: #284A53;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+QFrame#expensesHeader {
+    background-color: #C5E7E2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+QFrame#monthHeader {
+    background-color: #D8F0F6;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+QFrame#categoryHeader {
+    background-color: #FFD8CC;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+QFrame#tableBody, QFrame#summaryBody {
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+QLabel#sectionTitle {
+    color: #174A54;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+}
+
+QLineEdit, QComboBox, QDateEdit, QDoubleSpinBox {
+    background-color: #FFFFFF;
+    color: #243D43;
+    border: 1px solid #BED3D8;
+    border-radius: 8px;
+    padding: 6px 10px;
+    min-height: 26px;
+    selection-background-color: #92C3BE;
+}
+QLineEdit::placeholder { color: #9AAEB3; }
+QLineEdit:focus, QComboBox:focus, QDateEdit:focus, QDoubleSpinBox:focus {
+    border: 1px solid #2E6C76;
+}
+QComboBox::drop-down, QDateEdit::drop-down {
+    width: 30px;
+    border: none;
+    border-left: 1px solid #D7E4E6;
+    background-color: #F3F8F9;
+}
+QComboBox QAbstractItemView {
+    background: white;
+    border: 1px solid #D2E0E2;
+    selection-background-color: #E6F1EF;
+    selection-color: #203D44;
+}
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    width: 18px;
+    border: none;
+    background: #F4F8F9;
+}
+
+QPushButton {
+    background-color: #F7FAFB;
+    color: #244A53;
+    border: 1px solid #C7DBDF;
+    border-radius: 8px;
+    padding: 5px 9px;
+    min-height: 24px;
+    font-size: 11px;
+    font-weight: 700;
+}
+QPushButton:hover { background-color: #EAF3F2; border-color: #92C3BE; }
+QPushButton#primaryButton {
+    background-color: #2E7B80;
+    color: #FFFFFF;
+    border: 1px solid #2E7B80;
+    font-weight: 800;
+}
+QPushButton#primaryButton:hover { background-color: #286D72; }
+QPushButton#dangerButton {
+    background-color: #FFF8F4;
+    color: #D24F3E;
+    border: 1px solid #F0A28F;
+    font-weight: 800;
+}
+QPushButton#dangerButton:hover { background-color: #FADED4; }
+QPushButton#monthIconButton, QPushButton#categoryIconButton {
+    min-width: 34px; max-width: 34px;
+    min-height: 34px; max-height: 34px;
+    padding: 0;
+    border-radius: 17px;
+    background-color: rgba(255,255,255,210);
+    color: #2E6C76;
+    border: 1px solid #BFD6DA;
+    font-size: 16px;
+    font-weight: 800;
+}
+QPushButton#monthIconButton:hover, QPushButton#categoryIconButton:hover {
+    background-color: #FFFFFF;
+    border-color: #2E6C76;
+}
+
+QTableWidget {
+    background-color: #FFFFFF;
+    alternate-background-color: #F5F9FA;
+    color: #28434A;
+    border: 1px solid #DDE8EA;
+    border-radius: 10px;
+    gridline-color: #E5ECEE;
+    outline: 0;
+    selection-background-color: #E4F0EE;
+    selection-color: #203D44;
+}
+QTableWidget::item {
+    padding: 5px 9px;
+    border: none;
+    border-bottom: 1px solid #E8EEF0;
+}
+QTableWidget::item:alternate { background-color: #F5F9FA; }
+QHeaderView::section {
+    background-color: #F2F7F8;
+    color: #35545B;
+    border: none;
+    border-right: 1px solid #DDE7E9;
+    border-bottom: 1px solid #DDE7E9;
+    padding: 7px 8px;
+    font-size: 11px;
+    font-weight: 700;
+}
+QScrollBar:vertical {
+    background: transparent;
+    width: 9px;
+    margin: 2px;
+}
+QScrollBar::handle:vertical {
+    background: #C9D5D8;
+    border-radius: 4px;
+    min-height: 24px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: transparent; }
+
+QDialog { background-color: #EFF6F9; color: #24424A; }
+QLabel#chartTitle { color: #2E6C76; font-size: 20px; font-weight: 800; }
+
+QPushButton#colorWheelButton {
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 8px;
+}
+QPushButton#monthIconButton {
+    min-width: 36px; max-width: 36px;
+    min-height: 36px; max-height: 36px;
+    padding: 0; border: none; background: transparent;
+}
+QPushButton#categoryIconButton {
+    min-width: 40px; max-width: 40px;
+    min-height: 40px; max-height: 40px;
+    padding: 0; border: none; background: transparent;
+    color: #D98672; font-size: 28px; font-weight: 800;
+}
+QPushButton#categoryIconButton:hover, QPushButton#monthIconButton:hover { background: transparent; }
