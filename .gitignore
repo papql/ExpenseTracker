@@ -1,0 +1,13 @@
+# Local expense database
+expenses.db
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# macOS generated files
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
