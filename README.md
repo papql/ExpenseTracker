@@ -16,7 +16,7 @@ Track everyday expenses, organize spending by category, and explore monthly and 
 - **Category Summary:** Shows total spending across different expense categories.
 - **Year Selection:** View monthly and category summaries for different years.
 - **Data Visualizations:** Generate graphs to better understand monthly and category spending patterns.
-- **Persistent Storage:** Uses SQLite to save expense information between sessions.
+- **Storage:** Uses SQLite to save expense information between sessions.
 
 ---
 
